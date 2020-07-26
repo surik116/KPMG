@@ -1,0 +1,18 @@
+
+# This is python code.
+users = {
+    "jeff" : 56,
+    "carl" : 23 ,
+    "joe" : 43,
+    "matt" : 97,
+    "eric" : 43,
+    "hugo" : 97
+    }
+    
+
+
+def value():
+  x = users["carl"]
+  print(x)
+    
+value()
