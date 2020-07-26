@@ -1,0 +1,8 @@
+ 
+# The easy way to do this by using aws cli. I am assuming here that the AWS key and the IAM role access is setup.
+ 
+ 
+ aws ec2 describe-instances
+    --instance-name test
+    --query 'Reservations[*].Instances[*].{Instance:InstanceId,Subnet:SubnetId}' 
+    --output json
